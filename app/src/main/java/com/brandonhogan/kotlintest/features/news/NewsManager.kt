@@ -1,6 +1,7 @@
 package com.brandonhogan.kotlintest.features.news
 
-import com.brandonhogan.kotlintest.api.RestAPI
+import com.brandonhogan.kotlintest.api.NewsAPI
+import com.brandonhogan.kotlintest.api.NewsRestAPI
 import com.brandonhogan.kotlintest.commons.RedditNews
 import com.brandonhogan.kotlintest.commons.RedditNewsItem
 import rx.Observable
@@ -10,12 +11,12 @@ import rx.Observable
  * Description :
  */
 
-class NewsManager(private val api: RestAPI = RestAPI()) {
+class NewsManager(private val apiNews: NewsAPI = NewsRestAPI()) {
 
     fun getNews(after: String, limit: String = "10"): Observable<RedditNews> {
         return Observable.create {
             subscriber ->
-            val callResponse = api.getNews(after, limit)
+            val callResponse = apiNews.getNews(after, limit)
             val response = callResponse.execute()
 
             if (response.isSuccessful) {
