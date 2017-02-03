@@ -25,8 +25,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="8d54f3d831665cf5785e29e860759daa1e9bf376">
+        sha1="a38f5fd9bc42b1d3bc39292d259eb4707e3080a9">
         <dex dex="C:\dev\KotlinTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_40aa0b98084d15897e86fcba2732ed7fd1f84c66\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0\5c06d197fb7fa875ad452f562e3310dd9949d066\retrofit-2.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5c06d197fb7fa875ad452f562e3310dd9949d066">
+        <dex dex="C:\dev\KotlinTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.0_da22b05750925fd53bba4eb75def7fde15fcf80a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,12 +48,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\dev\KotlinTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_ef8749c7ebfa39664ead0b91ea1d87be0bba6673\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\dev\KotlinTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
         <dex dex="C:\dev\KotlinTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_b7ab22ceb2833afa885c24137f6605d4dae779ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="C:\dev\KotlinTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_0ff0bc39c04664001314ad868523743af84830a0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -189,6 +216,24 @@
         revision="25.0.2"
         sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
         <dex dex="C:\dev\KotlinTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_6ead87c0f07f0a1ae077f7c183e57dc587e1b860\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-moshi\2.0.0\624ff1e32f3c5f5d69d24928306c633bbfde6323\converter-moshi-2.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="624ff1e32f3c5f5d69d24928306c633bbfde6323">
+        <dex dex="C:\dev\KotlinTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-moshi-2.0.0_26afb74b66c705d1c9883d4bbb9e7261ff7e20db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.moshi\moshi\1.1.0\9c665b797ef9427f6d73572642dcb5f90270f7d3\moshi-1.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9c665b797ef9427f6d73572642dcb5f90270f7d3">
+        <dex dex="C:\dev\KotlinTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\moshi-1.1.0_825bfe97aa2ff6763dc84d91fb1e703eebce29cf\classes.dex" />
     </item>
     <item
         is-multidex="true"

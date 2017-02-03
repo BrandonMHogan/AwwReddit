@@ -8,13 +8,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.brandonhogan.kotlintest.R
+import com.brandonhogan.kotlintest.commons.BaseFragment
 import com.brandonhogan.kotlintest.commons.extensions.inflate
 import com.brandonhogan.kotlintest.features.news.adapter.NewsAdapter
 import kotlinx.android.synthetic.main.news_fragment.*
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
 
-class NewsFragment : Fragment() {
+class NewsFragment : BaseFragment() {
 
     private val newsManager by lazy { NewsManager() }
 
@@ -46,6 +47,7 @@ class NewsFragment : Fragment() {
                             Snackbar.make(news_list, e.message ?: "", Snackbar.LENGTH_LONG).show()
                         }
                 )
+        subscriptions.add(subscription)
     }
 
     private fun initAdapter() {
