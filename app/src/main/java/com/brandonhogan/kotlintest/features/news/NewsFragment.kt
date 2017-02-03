@@ -2,13 +2,14 @@ package com.brandonhogan.kotlintest.features.news
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
-import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.brandonhogan.kotlintest.R
 import com.brandonhogan.kotlintest.commons.BaseFragment
+import com.brandonhogan.kotlintest.commons.InfiniteScrollListener
+import com.brandonhogan.kotlintest.commons.RedditNews
 import com.brandonhogan.kotlintest.commons.extensions.inflate
 import com.brandonhogan.kotlintest.features.news.adapter.NewsAdapter
 import kotlinx.android.synthetic.main.news_fragment.*
@@ -17,6 +18,7 @@ import rx.schedulers.Schedulers
 
 class NewsFragment : BaseFragment() {
 
+    private var redditNews: RedditNews? = null
     private val newsManager by lazy { NewsManager() }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -27,7 +29,10 @@ class NewsFragment : BaseFragment() {
         super.onActivityCreated(savedInstanceState)
 
         news_list.setHasFixedSize(true)
-        news_list.layoutManager = LinearLayoutManager(context)
+        val linearLayout = LinearLayoutManager(context)
+        news_list.layoutManager = linearLayout
+        news_list.clearOnScrollListeners()
+        news_list.addOnScrollListener(InfiniteScrollListener({ requestNews() }, linearLayout))
         initAdapter()
 
         if (savedInstanceState == null) {
@@ -36,12 +41,18 @@ class NewsFragment : BaseFragment() {
     }
 
     private fun requestNews() {
-        val subscription = newsManager.getNews()
+        /**
+         * first time will send empty string for after parameter.
+         * Next time we will have redditNews set with the next page to
+         * navigate with the after param.
+         */
+        val subscription = newsManager.getNews(redditNews?.after ?: "")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe (
                         { retrievedNews ->
-                            (news_list.adapter as NewsAdapter).addNews(retrievedNews)
+                            redditNews = retrievedNews
+                            (news_list.adapter as NewsAdapter).addNews(retrievedNews.news)
                         },
                         { e ->
                             Snackbar.make(news_list, e.message ?: "", Snackbar.LENGTH_LONG).show()
