@@ -5,18 +5,21 @@ import com.brandonhogan.kotlintest.api.NewsRestAPI
 import com.brandonhogan.kotlintest.commons.RedditNews
 import com.brandonhogan.kotlintest.commons.RedditNewsItem
 import rx.Observable
+import javax.inject.Inject
+import javax.inject.Singleton
 
 /**
  * Created by Brandon on 2/2/2017.
  * Description :
  */
 
-class NewsManager(private val apiNews: NewsAPI = NewsRestAPI()) {
+@Singleton
+class NewsManager @Inject constructor(private val api: NewsAPI) {
 
     fun getNews(after: String, limit: String = "10"): Observable<RedditNews> {
         return Observable.create {
             subscriber ->
-            val callResponse = apiNews.getNews(after, limit)
+            val callResponse = api.getNews(after, limit)
             val response = callResponse.execute()
 
             if (response.isSuccessful) {
