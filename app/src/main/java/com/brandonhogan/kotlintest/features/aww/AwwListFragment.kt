@@ -13,7 +13,7 @@ import com.brandonhogan.kotlintest.commons.InfiniteScrollListener
 import com.brandonhogan.kotlintest.commons.RedditAww
 import com.brandonhogan.kotlintest.commons.extensions.inflate
 import com.brandonhogan.kotlintest.features.aww.adapter.AwwAdapter
-import kotlinx.android.synthetic.main.news_fragment.*
+import kotlinx.android.synthetic.main.aww_list_fragment.*
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
 import javax.inject.Inject
@@ -21,7 +21,7 @@ import javax.inject.Inject
 class AwwListFragment : BaseFragment() {
 
     companion object {
-        private val NEWS_KEY = "newsKey"
+        private val AWW_KEY = "awwKey"
     }
 
     @Inject lateinit var awwManager: AwwManager
@@ -34,7 +34,7 @@ class AwwListFragment : BaseFragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return container?.inflate(R.layout.news_fragment)
+        return container?.inflate(R.layout.aww_list_fragment)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -50,8 +50,8 @@ class AwwListFragment : BaseFragment() {
 
         initAdapter()
 
-        if (savedInstanceState != null && savedInstanceState.containsKey(NEWS_KEY)) {
-            redditAww = savedInstanceState.get(NEWS_KEY) as RedditAww
+        if (savedInstanceState != null && savedInstanceState.containsKey(AWW_KEY)) {
+            redditAww = savedInstanceState.get(AWW_KEY) as RedditAww
             (news_list.adapter as AwwAdapter).clearAndAddNews(redditAww!!.aNews)
         } else {
             requestNews()
@@ -62,16 +62,11 @@ class AwwListFragment : BaseFragment() {
         super.onSaveInstanceState(outState)
         val news = (news_list.adapter as AwwAdapter).getNews()
         if (redditAww != null && news.isNotEmpty()) {
-            outState.putParcelable(NEWS_KEY, redditAww?.copy(aNews = news))
+            outState.putParcelable(AWW_KEY, redditAww?.copy(aNews = news))
         }
     }
 
     private fun requestNews() {
-        /**
-         * first time will send empty string for after parameter.
-         * Next time we will have redditAww set with the next page to
-         * navigate with the after param.
-         */
         val subscription = awwManager.getRedditAww(redditAww?.after ?: "", "10", true)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

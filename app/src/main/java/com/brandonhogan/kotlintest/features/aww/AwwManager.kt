@@ -38,10 +38,12 @@ class AwwManager @Inject constructor(private val api: AwwAPI) {
                             item.created, img, item.url)
 
                 }
+
+
                 val redditNews = RedditAww(
                         dataResponse.after ?: "",
                         dataResponse.before ?: "",
-                        news)
+                        news.filter { it.thumbnail.isNotEmpty() && !it.url.contains("reddit.com", true) })
 
                 subscriber.onNext(redditNews)
                 subscriber.onCompleted()

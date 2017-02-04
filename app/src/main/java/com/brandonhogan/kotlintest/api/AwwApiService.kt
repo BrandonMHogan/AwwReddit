@@ -9,7 +9,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface RedditApiService {
+interface AwwApiService {
 
     @GET("/r/aww/hot.json")
     fun getAwwHot(@Query("after") after: String,

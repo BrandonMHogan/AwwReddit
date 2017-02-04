@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/aww_item_margin_bottom"
+    android:padding="@dimen/aww_item_padding">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/item_title_color"
+        android:textSize="@dimen/aww_item_title_size"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Author -->
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/title"
+        android:textColor="@color/item_author_color"
+        android:textSize="@dimen/aww_item_author_size"
+        android:typeface="sans"
+        tools:ignore="SmallSp"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/author"
+        android:layout_alignRight="@+id/author"
+        android:layout_below="@+id/title"
+        android:gravity="end"
+        android:textColor="@color/item_date_color"
+        android:textSize="@dimen/aww_item_date_size"
+        android:textStyle="bold"
+        android:typeface="sans"
+        tools:ignore="SmallSp"/>
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/img_thumbnail"
+        android:layout_below="@id/time"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="3dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aww_item_divider_height"
+        android:layout_below="@id/img_thumbnail"
+        android:layout_marginTop="@dimen/aww_item_divider_margin_top"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

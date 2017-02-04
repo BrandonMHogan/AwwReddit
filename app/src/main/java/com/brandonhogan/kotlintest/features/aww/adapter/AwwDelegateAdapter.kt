@@ -9,7 +9,7 @@ import com.brandonhogan.kotlintest.commons.adapter.ViewTypeDelegateAdapter
 import com.brandonhogan.kotlintest.commons.extensions.getFriendlyTime
 import com.brandonhogan.kotlintest.commons.extensions.inflate
 import com.brandonhogan.kotlintest.commons.extensions.loadImg
-import kotlinx.android.synthetic.main.news_item.view.*
+import kotlinx.android.synthetic.main.aww_item.view.*
 
 class AwwDelegateAdapter : ViewTypeDelegateAdapter {
 
@@ -23,12 +23,12 @@ class AwwDelegateAdapter : ViewTypeDelegateAdapter {
     }
 
     class TurnsViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
-            parent.inflate(R.layout.news_item)) {
+            parent.inflate(R.layout.aww_item)) {
 
         fun bind(item: RedditAwwItem) = with(itemView) {
             //Picasso.with(itemView.context).load(item.thumbnail).into(img_thumbnail)
             img_thumbnail.loadImg(item.thumbnail)
-            description.text = item.title
+            title.text = item.title
             author.text = item.author
             time.text = item.created.getFriendlyTime()
         }

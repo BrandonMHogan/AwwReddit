@@ -8,13 +8,13 @@ package com.brandonhogan.kotlintest.api
 import retrofit2.Call
 import javax.inject.Inject
 
-class AwwAPIImpl @Inject constructor(private val redditApiService: RedditApiService) : AwwAPI {
+class AwwAPIImpl @Inject constructor(private val awwApiService: AwwApiService) : AwwAPI {
 
     override fun getAwwHot(after: String, limit: String): Call<RedditAwwResponse> {
-        return redditApiService.getAwwHot(after, limit)
+        return awwApiService.getAwwHot(after, limit)
     }
 
     override fun getAwwTop(after: String, limit: String): Call<RedditAwwResponse> {
-        return redditApiService.getAwwTop(after, limit)
+        return awwApiService.getAwwTop(after, limit)
     }
 }

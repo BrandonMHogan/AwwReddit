@@ -37,7 +37,7 @@ data class RedditAwwItem(
         val title: String,
         val created: Long,
         val thumbnail: String,
-        val url: String?
+        val url: String
 ) : ViewType, Parcelable {
 
     override fun getViewType() = AdapterConstants.ITEM

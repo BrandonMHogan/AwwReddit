@@ -2,7 +2,7 @@ package com.brandonhogan.kotlintest.di.module
 
 import com.brandonhogan.kotlintest.api.AwwAPI
 import com.brandonhogan.kotlintest.api.AwwAPIImpl
-import com.brandonhogan.kotlintest.api.RedditApiService
+import com.brandonhogan.kotlintest.api.AwwApiService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -18,14 +18,14 @@ class AwwModule {
 
     @Provides
     @Singleton
-    fun provideAwwAPI(redditApiService: RedditApiService): AwwAPI {
-        return AwwAPIImpl(redditApiService)
+    fun provideAwwAPI(awwApiService: AwwApiService): AwwAPI {
+        return AwwAPIImpl(awwApiService)
     }
 
     @Provides
     @Singleton
-    fun provideRedditApi(retrofit: Retrofit): RedditApiService {
-        return retrofit.create(RedditApiService::class.java)
+    fun provideRedditApi(retrofit: Retrofit): AwwApiService {
+        return retrofit.create(AwwApiService::class.java)
     }
 
     /**
