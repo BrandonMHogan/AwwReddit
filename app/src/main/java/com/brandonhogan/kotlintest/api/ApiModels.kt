@@ -5,7 +5,7 @@ package com.brandonhogan.kotlintest.api
  * Description :
  */
 
-class RedditNewsResponse(val data: RedditDataResponse)
+class RedditAwwResponse(val data: RedditDataResponse)
 
 class RedditDataResponse(
         val children: List<RedditChildrenResponse>,
@@ -13,9 +13,9 @@ class RedditDataResponse(
         val before: String?
 )
 
-class RedditChildrenResponse(val data: RedditNewsDataResponse)
+class RedditChildrenResponse(val data: RedditAwwDataResponse)
 
-class RedditNewsDataResponse(
+class RedditAwwDataResponse(
         val author: String,
         val title: String,
         val num_comments: Int,

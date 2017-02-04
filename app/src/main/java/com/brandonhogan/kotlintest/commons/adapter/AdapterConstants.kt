@@ -6,6 +6,6 @@ package com.brandonhogan.kotlintest.commons.adapter
  */
 
 object AdapterConstants {
-    val NEWS = 1
+    val ITEM = 1
     val LOADING = 2
 }

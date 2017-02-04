@@ -10,29 +10,29 @@ import com.brandonhogan.kotlintest.commons.adapter.ViewType
  * Description :
  */
 
-data class RedditNews(
+data class RedditAww(
         val after: String,
         val before: String,
-        val news: List<RedditNewsItem>) : Parcelable {
+        val aNews: List<RedditAwwItem>) : Parcelable {
     companion object {
-        @JvmField val CREATOR: Parcelable.Creator<RedditNews> = object : Parcelable.Creator<RedditNews> {
-            override fun createFromParcel(source: Parcel): RedditNews = RedditNews(source)
-            override fun newArray(size: Int): Array<RedditNews?> = arrayOfNulls(size)
+        @JvmField val CREATOR: Parcelable.Creator<RedditAww> = object : Parcelable.Creator<RedditAww> {
+            override fun createFromParcel(source: Parcel): RedditAww = RedditAww(source)
+            override fun newArray(size: Int): Array<RedditAww?> = arrayOfNulls(size)
         }
     }
 
-    constructor(source: Parcel) : this(source.readString(), source.readString(), source.createTypedArrayList(RedditNewsItem.CREATOR))
+    constructor(source: Parcel) : this(source.readString(), source.readString(), source.createTypedArrayList(RedditAwwItem.CREATOR))
 
     override fun describeContents() = 0
 
     override fun writeToParcel(dest: Parcel?, flags: Int) {
         dest?.writeString(after)
         dest?.writeString(before)
-        dest?.writeTypedList(news)
+        dest?.writeTypedList(aNews)
     }
 }
 
-data class RedditNewsItem(
+data class RedditAwwItem(
         val author: String,
         val title: String,
         val numComments: Int,
@@ -41,12 +41,12 @@ data class RedditNewsItem(
         val url: String?
 ) : ViewType, Parcelable {
 
-    override fun getViewType() = AdapterConstants.NEWS
+    override fun getViewType() = AdapterConstants.ITEM
 
     companion object {
-        @JvmField val CREATOR: Parcelable.Creator<RedditNewsItem> = object : Parcelable.Creator<RedditNewsItem> {
-            override fun createFromParcel(source: Parcel): RedditNewsItem = RedditNewsItem(source)
-            override fun newArray(size: Int): Array<RedditNewsItem?> = arrayOfNulls(size)
+        @JvmField val CREATOR: Parcelable.Creator<RedditAwwItem> = object : Parcelable.Creator<RedditAwwItem> {
+            override fun createFromParcel(source: Parcel): RedditAwwItem = RedditAwwItem(source)
+            override fun newArray(size: Int): Array<RedditAwwItem?> = arrayOfNulls(size)
         }
     }
 
