@@ -57,9 +57,14 @@ class AwwManagerTest {
     fun testSuccess_checkOneAww() {
         // prepare
 
+        val sourceData = RedditSourceDataResponse("www.fake.com")
+        val imageData = RedditImagesDataResponse(sourceData)
+        val imagesList = ArrayList<RedditImagesDataResponse>()
+        imagesList.add(imageData)
+        val previewData = RedditPreviewDataResponse(imagesList)
 
         val newsData = RedditAwwDataResponse(
-                null,
+                previewData,
                 "author",
                 "title",
                 Date().time,
