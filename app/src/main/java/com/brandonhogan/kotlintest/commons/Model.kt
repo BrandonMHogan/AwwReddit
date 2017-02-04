@@ -35,7 +35,6 @@ data class RedditAww(
 data class RedditAwwItem(
         val author: String,
         val title: String,
-        val numComments: Int,
         val created: Long,
         val thumbnail: String,
         val url: String?
@@ -50,14 +49,13 @@ data class RedditAwwItem(
         }
     }
 
-    constructor(source: Parcel) : this(source.readString(), source.readString(), source.readInt(), source.readLong(), source.readString(), source.readString())
+    constructor(source: Parcel) : this(source.readString(), source.readString(), source.readLong(), source.readString(), source.readString())
 
     override fun describeContents() = 0
 
     override fun writeToParcel(dest: Parcel?, flags: Int) {
         dest?.writeString(author)
         dest?.writeString(title)
-        dest?.writeInt(numComments)
         dest?.writeLong(created)
         dest?.writeString(thumbnail)
         dest?.writeString(url)

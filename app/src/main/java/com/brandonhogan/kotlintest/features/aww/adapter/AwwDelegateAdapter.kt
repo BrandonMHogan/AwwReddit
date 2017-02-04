@@ -30,7 +30,6 @@ class AwwDelegateAdapter : ViewTypeDelegateAdapter {
             img_thumbnail.loadImg(item.thumbnail)
             description.text = item.title
             author.text = item.author
-            comments.text = "${item.numComments} comments"
             time.text = item.created.getFriendlyTime()
         }
     }

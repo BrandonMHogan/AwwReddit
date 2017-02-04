@@ -37,6 +37,8 @@ dependencies {
 
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:percent:25.0.1'
+    compile 'com.android.support:support-v4:25.0.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     // Picasso
@@ -49,6 +51,7 @@ dependencies {
     // Retrofit
     compile "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
     compile "com.squareup.retrofit2:converter-moshi:$rootProject.ext.retrofitVersion"
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
 
     // Dagger 2
     compile "com.google.dagger:dagger:$rootProject.ext.daggerVersion"

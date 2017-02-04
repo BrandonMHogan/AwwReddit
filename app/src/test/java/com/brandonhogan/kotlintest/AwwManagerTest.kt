@@ -56,12 +56,13 @@ class AwwManagerTest {
     @Test
     fun testSuccess_checkOneAww() {
         // prepare
+
+
         val newsData = RedditAwwDataResponse(
+                null,
                 "author",
                 "title",
-                10,
                 Date().time,
-                "thumbnail",
                 "url"
         )
         val newsResponse = RedditChildrenResponse(newsData)
@@ -92,8 +93,8 @@ class AwwManagerTest {
         `when`(callMock.execute()).thenReturn(responseError)
 
         // call
-        val newsManager = AwwManager(apiMock)
-        newsManager.getRedditAww("").subscribe(testSub)
+        val awwManager = AwwManager(apiMock)
+        awwManager.getRedditAww("").subscribe(testSub)
 
         // assert
         assert(testSub.onErrorEvents.size == 1)

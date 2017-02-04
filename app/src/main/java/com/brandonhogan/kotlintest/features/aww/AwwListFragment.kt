@@ -12,7 +12,6 @@ import com.brandonhogan.kotlintest.commons.BaseFragment
 import com.brandonhogan.kotlintest.commons.InfiniteScrollListener
 import com.brandonhogan.kotlintest.commons.RedditAww
 import com.brandonhogan.kotlintest.commons.extensions.inflate
-import com.brandonhogan.kotlintest.di.module.AppModule
 import com.brandonhogan.kotlintest.features.aww.adapter.AwwAdapter
 import kotlinx.android.synthetic.main.news_fragment.*
 import rx.android.schedulers.AndroidSchedulers
@@ -82,7 +81,7 @@ class AwwListFragment : BaseFragment() {
                             (news_list.adapter as AwwAdapter).addNews(retrievedNews.aNews)
                         },
                         { e ->
-                            Snackbar.make(news_list, e.message ?: "", Snackbar.LENGTH_LONG).show()
+                            Snackbar.make(news_list, e.message ?: "", Snackbar.LENGTH_INDEFINITE).show()
                         }
                 )
         subscriptions.add(subscription)
