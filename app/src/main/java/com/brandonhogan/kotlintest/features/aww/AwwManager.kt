@@ -35,7 +35,7 @@ class AwwManager @Inject constructor(private val api: AwwAPI) {
                     }
 
                     RedditAwwItem(item.author, item.title,
-                            item.created, img, item.url)
+                            item.created_utc, img, item.url)
 
                 }
 

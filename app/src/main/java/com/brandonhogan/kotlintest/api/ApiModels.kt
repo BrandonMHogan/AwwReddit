@@ -19,7 +19,7 @@ class RedditAwwDataResponse(
         val preview: RedditPreviewDataResponse?,
         val author: String,
         val title: String,
-        val created: Long,
+        val created_utc: Long,
         val url: String
 )
 
