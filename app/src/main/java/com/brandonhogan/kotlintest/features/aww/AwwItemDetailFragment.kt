@@ -8,10 +8,8 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.brandonhogan.kotlintest.R
 import com.brandonhogan.kotlintest.commons.BaseFragment
-import com.brandonhogan.kotlintest.commons.RedditAww
 import com.brandonhogan.kotlintest.commons.RedditAwwItem
 import com.brandonhogan.kotlintest.commons.extensions.inflate
-import com.koushikdutta.ion.Ion
 import javax.inject.Inject
 import kotlinx.android.synthetic.main.aww_item_detail_fragment.*
 
