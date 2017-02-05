@@ -10,6 +10,7 @@
     android:layout_margin="5dp"
     card_view:cardCornerRadius="4dp"
     card_view:contentPadding="1dp"
+    android:clickable="true"
     card_view:cardBackgroundColor="@color/item_card_background_color">
 
         <RelativeLayout
@@ -19,7 +20,8 @@
             android:orientation="horizontal"
             android:layout_marginBottom="@dimen/aww_item_margin_bottom"
             android:layout_marginTop="@dimen/aww_item_margin_top"
-            android:padding="@dimen/aww_item_padding">
+            android:padding="@dimen/aww_item_padding"
+            android:clickable="true">
 
                 <!-- Title -->
                 <TextView
@@ -77,7 +79,8 @@
                     android:layout_width="match_parent"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:layout_marginTop="3dp" />
+                    android:layout_marginTop="3dp"
+                    android:clickable="true"/>
 
         </RelativeLayout>
 

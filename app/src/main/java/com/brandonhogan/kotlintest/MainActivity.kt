@@ -5,7 +5,14 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import android.util.Log
+import com.brandonhogan.kotlintest.commons.BusStation
+import com.brandonhogan.kotlintest.commons.RedditAwwItem
+import com.brandonhogan.kotlintest.features.aww.AwwItemDetailFragment
 import com.brandonhogan.kotlintest.features.aww.AwwListFragment
+import com.squareup.otto.Bus
+import com.squareup.otto.Subscribe
+import com.squareup.otto.ThreadEnforcer
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,15 +27,34 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        BusStation.bus.register(this)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        BusStation.bus.unregister(this)
+    }
+
     fun changeFragment(f: Fragment, cleanStack: Boolean = false) {
         val ft = supportFragmentManager.beginTransaction()
         if (cleanStack) {
             clearBackStack()
         }
+
         ft.setCustomAnimations(
                 R.anim.abc_fade_in, R.anim.abc_fade_out, R.anim.abc_popup_enter, R.anim.abc_popup_exit)
-        ft.replace(R.id.activity_base_content, f)
-        ft.addToBackStack(null)
+        ft.addToBackStack(f.tag)
+
+        if (fragmentManager.findFragmentByTag(f.tag) != null) {
+            ft.show(f)
+        }
+        else {
+            ft.add(R.id.activity_base_content, f, f.tag)
+        }
+
+
         ft.commit()
     }
 
@@ -50,5 +76,11 @@ class MainActivity : AppCompatActivity() {
         } else {
             finish()
         }
+    }
+
+    @Subscribe
+    fun getRedditAwwItem(awwItem : RedditAwwItem) {
+        changeFragment(AwwItemDetailFragment.newInstance(awwItem))
+
     }
 }
