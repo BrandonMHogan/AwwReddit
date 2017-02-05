@@ -58,7 +58,7 @@ class AwwManagerTest {
         // prepare
 
         val sourceData = RedditSourceDataResponse("www.fake.com")
-        val imageData = RedditImagesDataResponse(sourceData)
+        val imageData = RedditImagesDataResponse(sourceData, null)
         val imagesList = ArrayList<RedditImagesDataResponse>()
         imagesList.add(imageData)
         val previewData = RedditPreviewDataResponse(imagesList)

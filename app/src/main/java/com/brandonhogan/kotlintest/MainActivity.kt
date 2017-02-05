@@ -5,14 +5,11 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.util.Log
 import com.brandonhogan.kotlintest.commons.BusStation
 import com.brandonhogan.kotlintest.commons.RedditAwwItem
 import com.brandonhogan.kotlintest.features.aww.AwwItemDetailFragment
 import com.brandonhogan.kotlintest.features.aww.AwwListFragment
-import com.squareup.otto.Bus
 import com.squareup.otto.Subscribe
-import com.squareup.otto.ThreadEnforcer
 
 class MainActivity : AppCompatActivity() {
 
@@ -81,6 +78,5 @@ class MainActivity : AppCompatActivity() {
     @Subscribe
     fun getRedditAwwItem(awwItem : RedditAwwItem) {
         changeFragment(AwwItemDetailFragment.newInstance(awwItem))
-
     }
 }

@@ -37,6 +37,7 @@ data class RedditAwwItem(
         val title: String,
         val created: Long,
         val thumbnail: String,
+        val gif: String?,
         val url: String
 ) : ViewType, Parcelable {
 
@@ -49,7 +50,7 @@ data class RedditAwwItem(
         }
     }
 
-    constructor(source: Parcel) : this(source.readString(), source.readString(), source.readLong(), source.readString(), source.readString())
+    constructor(source: Parcel) : this(source.readString(), source.readString(), source.readLong(), source.readString(), source.readString(), source.readString())
 
     override fun describeContents() = 0
 

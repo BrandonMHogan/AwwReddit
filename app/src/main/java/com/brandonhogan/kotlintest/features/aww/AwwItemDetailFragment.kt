@@ -1,15 +1,17 @@
 package com.brandonhogan.kotlintest.features.aww
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import com.brandonhogan.kotlintest.R
 import com.brandonhogan.kotlintest.commons.BaseFragment
 import com.brandonhogan.kotlintest.commons.RedditAww
 import com.brandonhogan.kotlintest.commons.RedditAwwItem
 import com.brandonhogan.kotlintest.commons.extensions.inflate
+import com.koushikdutta.ion.Ion
 import javax.inject.Inject
 import kotlinx.android.synthetic.main.aww_item_detail_fragment.*
 
@@ -51,9 +53,17 @@ class AwwItemDetailFragment : BaseFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         title.setText(redditAwwItem?.title)
+
+        (image as WebView).setBackgroundColor(Color.GREEN)
+        (image as WebView).settings.useWideViewPort = true
+        (image as WebView).settings.loadWithOverviewMode = true
+
+        (image as WebView).setWebViewClient(WebViewClient())
+        (image as WebView).loadUrl(redditAwwItem?.gif ?: redditAwwItem?.thumbnail)
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
     }
+
 }

@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_ba3cf2263e956498ed60cb772f2237b8815dd5dc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0\5c06d197fb7fa875ad452f562e3310dd9949d066\retrofit-2.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -30,39 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.0.6\d19acb6ed49b9c48228c0e5dff8071fce23be4b8\kotlin-stdlib-1.0.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d19acb6ed49b9c48228c0e5dff8071fce23be4b8">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-stdlib-1.0.6_17d009a9141930842adc979fb4c19eec3e453a03\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-runtime\1.0.6\3562c66f648480d3bd4f76cff722488ced13445b\kotlin-runtime-1.0.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3562c66f648480d3bd4f76cff722488ced13445b">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-runtime-1.0.6_94f3c75e271e2f84283dd13e144771dbab87121a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\dev\AwwReddit\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="346bbf4856d485433c06206cbad18272ab674b8f">
+        sha1="1b342a3eb34b298a655d9b70423a2d50dd068618">
         <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eb8325e2e1d473d422f313eefcf0f40f138bef11\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_14ef62517d512e5a2e95a856edd2c45075d93cd0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,15 +48,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_44db4dab3b5655365d686cc091c356c485ae3356\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.5.0\4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83\okhttp-3.5.0.jar"
         jumboMode="true"
         optimize="true"
@@ -111,33 +66,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.3\5a1aef6a9d56efb473b8be6b66689077e7317c45\rxjava-1.1.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5a1aef6a9d56efb473b8be6b66689077e7317c45">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.1.3_856a4ce621245940a2218889e367fdcf2afb7c3a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.1_054f46c8dc86291f67a52f5aa4a6a98a959b7fbc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.inject-1_6c1ede9f745188cec4c9e39f49877546e1fe4492\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -147,12 +75,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3\5fc52c41ef0239d1093a1eb7c3697036183677ce\gson-2.3.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_9546d727d55a14c40956421381786f9f9503d157\classes.dex" />
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3_3d6ccbe0e0cec07c03ec948e32627213892fdc93\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -165,15 +93,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.11.0_91eaab0ffa3640b2b335a1482d87c1bc4bf9aa62\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -183,48 +102,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup\otto\1.3.8\cf615176cd1177edf71d3c9605f8dc148fede6be\otto-1.3.8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cf615176cd1177edf71d3c9605f8dc148fede6be">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\otto-1.3.8_3f9322a7c11dfaad13f16cde6efe9dec10621a55\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\dev\AwwReddit\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a85b2df1aa7a2efbc3be636c848ff72ecc4f1840">
+        sha1="1eb61746e2c13abe37d825e9a3f798a4c4976aaf">
         <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d3e5157a17f0d07092d510689497569617e6807f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_d064ccf3889e5b679ea39140fa7ca2d8ec47a93f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_ff749bff4135f2d46fcf7fe8c6a5cad46fd17009\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_edf38077f66dc2059ad9a63458a8e92aeedfe741\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,57 +120,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_fb82ecc819d9b9a31d3545ef2ca613c67c84f33a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_c3976b6b12159cbbd66cf07fafe962ae5ff4ae3b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.1_7f8fe85e78e0b3e730689a87620a31debcc19d23\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
         <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_07eeaa6f16a1fd6681c20c528bc0ab72f091c4a6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_253565edb05093cb958162aefb372699cc4ad74c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-moshi\2.0.0\624ff1e32f3c5f5d69d24928306c633bbfde6323\converter-moshi-2.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="624ff1e32f3c5f5d69d24928306c633bbfde6323">
-        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-moshi-2.0.0_26afb74b66c705d1c9883d4bbb9e7261ff7e20db\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -324,6 +162,195 @@
         revision="25.0.2"
         sha1="a2e0fb833ba928689fb8b8d9cc92a81298da7c37">
         <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\dagger-2.6_da2166818f4a939aef579bdaa55fea169fcb23d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_ba3cf2263e956498ed60cb772f2237b8815dd5dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.0.6\d19acb6ed49b9c48228c0e5dff8071fce23be4b8\kotlin-stdlib-1.0.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d19acb6ed49b9c48228c0e5dff8071fce23be4b8">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-stdlib-1.0.6_17d009a9141930842adc979fb4c19eec3e453a03\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-runtime\1.0.6\3562c66f648480d3bd4f76cff722488ced13445b\kotlin-runtime-1.0.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3562c66f648480d3bd4f76cff722488ced13445b">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-runtime-1.0.6_94f3c75e271e2f84283dd13e144771dbab87121a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_14ef62517d512e5a2e95a856edd2c45075d93cd0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_44db4dab3b5655365d686cc091c356c485ae3356\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.3\5a1aef6a9d56efb473b8be6b66689077e7317c45\rxjava-1.1.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5a1aef6a9d56efb473b8be6b66689077e7317c45">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.1.3_856a4ce621245940a2218889e367fdcf2afb7c3a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.1_054f46c8dc86291f67a52f5aa4a6a98a959b7fbc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.inject-1_6c1ede9f745188cec4c9e39f49877546e1fe4492\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_9546d727d55a14c40956421381786f9f9503d157\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.11.0_91eaab0ffa3640b2b335a1482d87c1bc4bf9aa62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup\otto\1.3.8\cf615176cd1177edf71d3c9605f8dc148fede6be\otto-1.3.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cf615176cd1177edf71d3c9605f8dc148fede6be">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\otto-1.3.8_3f9322a7c11dfaad13f16cde6efe9dec10621a55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_d064ccf3889e5b679ea39140fa7ca2d8ec47a93f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_ff749bff4135f2d46fcf7fe8c6a5cad46fd17009\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_edf38077f66dc2059ad9a63458a8e92aeedfe741\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.koushikdutta.ion\ion\2.1.9\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e54ea31584406fcc68225a8656f384c333ff2ee">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.koushikdutta.ion-ion-2.1.9_225efa751ebdb8fb8cb9ff0aa58044688ced7ab6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_fb82ecc819d9b9a31d3545ef2ca613c67c84f33a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_c3976b6b12159cbbd66cf07fafe962ae5ff4ae3b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.1_7f8fe85e78e0b3e730689a87620a31debcc19d23\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_253565edb05093cb958162aefb372699cc4ad74c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shint\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-moshi\2.0.0\624ff1e32f3c5f5d69d24928306c633bbfde6323\converter-moshi-2.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="624ff1e32f3c5f5d69d24928306c633bbfde6323">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-moshi-2.0.0_26afb74b66c705d1c9883d4bbb9e7261ff7e20db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\dev\AwwReddit\app\build\intermediates\exploded-aar\com.koushikdutta.async\androidasync\2.1.9\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="60d0e28fe7ab6da6c03b54cd8ede502284d51a81">
+        <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.koushikdutta.async-androidasync-2.1.9_453fefaad2f32e691f68de091bc754467319a65d\classes.dex" />
     </item>
 
 </items>

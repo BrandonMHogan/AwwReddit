@@ -28,9 +28,18 @@ class RedditPreviewDataResponse(
 )
 
 class RedditImagesDataResponse (
-    val source: RedditSourceDataResponse?
+    val source: RedditSourceDataResponse?,
+    val variants: RedditVariantsDataResponse?
 )
 
 class RedditSourceDataResponse(
         val url: String
+)
+
+class RedditVariantsDataResponse(
+        val gif: RedditVariantsGifDataResponse
+)
+
+class RedditVariantsGifDataResponse(
+        val source: RedditSourceDataResponse
 )
