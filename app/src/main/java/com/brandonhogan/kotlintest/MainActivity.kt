@@ -10,6 +10,7 @@ import com.brandonhogan.kotlintest.commons.RedditAwwItem
 import com.brandonhogan.kotlintest.features.aww.AwwItemDetailFragment
 import com.brandonhogan.kotlintest.features.aww.AwwListFragment
 import com.squareup.otto.Subscribe
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         BusStation.bus.unregister(this)
+    }
+
+    fun setActionBarTitle(title : String) {
+        toolbar.setTitle(title)
     }
 
     fun changeFragment(f: Fragment, cleanStack: Boolean = false) {
