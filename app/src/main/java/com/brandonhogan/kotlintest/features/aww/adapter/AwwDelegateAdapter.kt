@@ -36,7 +36,7 @@ class AwwDelegateAdapter : ViewTypeDelegateAdapter {
             }
 
             //Picasso.with(itemView.context).load(item.thumbnail).into(img_thumbnail)
-            img_thumbnail.loadImg(item.thumbnail)
+            img_thumbnail.loadImg(item.image)
             title.text = item.title
             author.text = item.author
             time.text = item.created.getFriendlyTime()

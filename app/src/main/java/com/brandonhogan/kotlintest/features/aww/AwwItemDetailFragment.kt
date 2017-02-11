@@ -17,6 +17,7 @@ import javax.inject.Inject
 import kotlinx.android.synthetic.main.aww_item_detail_fragment.*
 import com.bumptech.glide.load.model.GlideUrl
 import com.bumptech.glide.integration.okhttp3.OkHttpUrlLoader
+import com.bumptech.glide.request.target.GlideDrawableImageViewTarget
 import javax.xml.datatype.DatatypeConstants.SECONDS
 import okhttp3.OkHttpClient
 import java.io.InputStream
@@ -64,20 +65,25 @@ class AwwItemDetailFragment : BaseFragment() {
 
         (activity as MainActivity).setActionBarTitle(redditAwwItem?.title ?: "")
 
-        if (redditAwwItem?.gif == null) {
-            Glide.with(context).load(redditAwwItem?.thumbnail).asBitmap().atMost().fitCenter().placeholder(R.drawable.progress_anim).into((image as ImageView))
+        if (redditAwwItem?.gif.isNullOrEmpty()) {
+            Glide.with(context).load(redditAwwItem?.image).asBitmap().fitCenter().placeholder(R.drawable.progress_anim).into((image as ImageView))
         }
         else {
-            Glide.with(context).load(redditAwwItem?.gif as String).asGif().fitCenter().placeholder(R.drawable.progress_anim).into((image as ImageView))
-        }
-
-
-//        (image as WebView).setBackgroundColor(Color.GREEN)
-//        (image as WebView).settings.useWideViewPort = true
-//        (image as WebView).settings.loadWithOverviewMode = true
+//           // var imgViewTarget : GlideDrawableImageViewTarget = GlideDrawableImageViewTarget(image as ImageView)
+//          //  Glide.with(context).load(redditAwwItem?.gif).placeholder(R.drawable.progress_anim).into(imgViewTarget)
 //
-//        (image as WebView).setWebViewClient(WebViewClient())
-//        (image as WebView).loadUrl(redditAwwItem?.gif ?: redditAwwItem?.thumbnail)
+//
+//           Glide.with(context).load(redditAwwItem?.gif).placeholder(R.drawable.progress_anim).into((image))
+//        }
+
+
+            (web as WebView).setBackgroundColor(Color.TRANSPARENT)
+            (web as WebView).settings.useWideViewPort = true
+            (web as WebView).settings.loadWithOverviewMode = true
+
+            (web as WebView).setWebViewClient(WebViewClient())
+            (web as WebView).loadUrl(redditAwwItem?.gif)
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

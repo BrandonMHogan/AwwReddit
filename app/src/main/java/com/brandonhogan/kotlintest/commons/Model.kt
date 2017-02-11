@@ -36,7 +36,7 @@ data class RedditAwwItem(
         val author: String,
         val title: String,
         val created: Long,
-        val thumbnail: String,
+        val image: String,
         val gif: String?,
         val url: String
 ) : ViewType, Parcelable {
@@ -58,7 +58,7 @@ data class RedditAwwItem(
         dest?.writeString(author)
         dest?.writeString(title)
         dest?.writeLong(created)
-        dest?.writeString(thumbnail)
+        dest?.writeString(image)
         dest?.writeString(url)
     }
 }

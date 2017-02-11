@@ -28,22 +28,26 @@ class AwwManager @Inject constructor(private val api: AwwAPI) {
                 val news = dataResponse.children.map {
                     val item = it.data
 
-                    //TODO: check to see if its even possible for source to be null
                     var img : String = ""
-                    if (item.preview != null && item.preview.images != null) {
-                        img = item.preview.images.first().source?.url!!.replace("&amp;s", "&s")
+                    var gif : String = ""
+                    if (!item.resolutions.isEmpty()) {
+                        img = item.resolutions.last().url.replace("&amp;", "&")
+                    }
+
+
+                    if (!item.gifs.isEmpty()) {
+                        gif = item.gifs.last().url.replace("&amp;", "&")
                     }
 
                     RedditAwwItem(item.author, item.title,
-                            item.created_utc, img, item.preview?.images?.first()?.variants?.gif?.source?.url, item.url)
+                            item.created_utc, img, gif, item.url)
 
                 }
-
 
                 val redditNews = RedditAww(
                         dataResponse.after ?: "",
                         dataResponse.before ?: "",
-                        news.filter { it.thumbnail.isNotEmpty() && !it.url.contains("reddit.com", true) })
+                        news.filter { it.image.isNotEmpty() && !it.url.contains("reddit.com", true) })
 
                 subscriber.onNext(redditNews)
                 subscriber.onCompleted()

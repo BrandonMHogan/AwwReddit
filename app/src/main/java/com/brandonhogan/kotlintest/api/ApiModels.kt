@@ -15,31 +15,17 @@ class RedditDataResponse(
 
 class RedditChildrenResponse(val data: RedditAwwDataResponse)
 
-class RedditAwwDataResponse(
-        val preview: RedditPreviewDataResponse?,
+data class RedditAwwDataResponse(
         val author: String,
         val title: String,
         val created_utc: Long,
-        val url: String
+        val url: String,
+        val resolutions : List<Resolutions>,
+        val gifs : List<Resolutions>
 )
 
-class RedditPreviewDataResponse(
-        val images: List<RedditImagesDataResponse>?
-)
-
-class RedditImagesDataResponse (
-    val source: RedditSourceDataResponse?,
-    val variants: RedditVariantsDataResponse?
-)
-
-class RedditSourceDataResponse(
-        val url: String
-)
-
-class RedditVariantsDataResponse(
-        val gif: RedditVariantsGifDataResponse
-)
-
-class RedditVariantsGifDataResponse(
-        val source: RedditSourceDataResponse
+data class Resolutions(
+        val url: String,
+        val width: Int,
+        val height: Int
 )
