@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setActionBarTitle(title : String) {
-        toolbar.setTitle(title)
+        toolbar.title = title
     }
 
     fun changeFragment(f: Fragment, cleanStack: Boolean = false) {

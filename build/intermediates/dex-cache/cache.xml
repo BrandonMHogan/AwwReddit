@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="61611cce33433c309d8587f7b11b09fbba2563e9">
+        sha1="2d17b12c2af4b55fed3feb2c81ab15a6fc793d85">
         <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eb8325e2e1d473d422f313eefcf0f40f138bef11\classes.dex" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1fb017c2d82bd64d38ded42cfab387a06b8ebbcf">
+        sha1="ca6015aa2f8d3ffd522660d29ad3a6ff9bc4f952">
         <dex dex="C:\dev\AwwReddit\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d3e5157a17f0d07092d510689497569617e6807f\classes.dex" />
     </item>
     <item

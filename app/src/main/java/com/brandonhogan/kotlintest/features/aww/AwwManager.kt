@@ -31,16 +31,16 @@ class AwwManager @Inject constructor(private val api: AwwAPI) {
                     var img : String = ""
                     var gif : String = ""
                     if (!item.resolutions.isEmpty()) {
-                        img = item.resolutions.last().url.replace("&amp;", "&")
+                        img = item.resolutions.last().url.replace("&amp;", "&").trim()
                     }
 
 
                     if (!item.gifs.isEmpty()) {
-                        gif = item.gifs.last().url.replace("&amp;", "&")
+                        gif = item.gifs.last().url.replace("&amp;", "&").trim()
                     }
 
                     RedditAwwItem(item.author, item.title,
-                            item.created_utc, img, gif, item.url)
+                            item.created_utc, img, gif, item.url.trim().replace(".gifv", ".gif"))
 
                 }
 
