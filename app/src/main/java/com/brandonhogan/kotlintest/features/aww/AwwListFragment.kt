@@ -67,7 +67,7 @@ class AwwListFragment : BaseFragment() {
     }
 
     private fun requestNews() {
-        val subscription = awwManager.getRedditAww(redditAww?.after ?: "", "10", true)
+        val subscription = awwManager.getRedditAww(redditAww?.after ?: "", "20", true)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe (

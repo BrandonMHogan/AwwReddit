@@ -19,11 +19,5 @@ class AppController : Application() {
         super.onCreate()
         instance = this
         appComponent = DaggerAppComponent.create()
-
-//        appComponent = DaggerAppComponent.builder()
-//                .appModule(AppModule(this))
-//                //.newsModule(AwwModule()) Module with empty constructor is implicitly created by dagger.
-//                .build()
-
     }
 }

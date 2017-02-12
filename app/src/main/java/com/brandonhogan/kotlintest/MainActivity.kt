@@ -74,6 +74,7 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         val fragmentManager = supportFragmentManager
         if (fragmentManager.backStackEntryCount > 1) {
+            setActionBarTitle(getString(R.string.app_name))
             fragmentManager.popBackStack()
         } else {
             finish()

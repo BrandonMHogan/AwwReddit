@@ -1,5 +1,6 @@
 package com.brandonhogan.kotlintest.features.aww
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.*
 import android.webkit.WebViewClient
@@ -60,11 +61,14 @@ class AwwItemDetailFragment : BaseFragment() {
         // add progress bar
         web.setWebChromeClient(WebChromeClient())
         web.setWebViewClient(WebViewClient())
+        web.setBackgroundColor(Color.TRANSPARENT)
 
-        if (!redditAwwItem?.gif.isNullOrEmpty())
-            web.loadUrl(redditAwwItem?.gif)
-        else
-            web.loadUrl(redditAwwItem?.image)
+        web.loadUrl(redditAwwItem?.url)
+
+//        if (!redditAwwItem?.gif.isNullOrEmpty())
+//            web.loadUrl(redditAwwItem?.gif)
+//        else
+//            web.loadUrl(redditAwwItem?.image)
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
