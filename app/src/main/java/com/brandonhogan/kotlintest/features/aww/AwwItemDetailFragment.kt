@@ -57,6 +57,8 @@ class AwwItemDetailFragment : BaseFragment() {
         val webSettings = web.settings
         webSettings.javaScriptEnabled = true
         webSettings.setSupportMultipleWindows(true)
+        webSettings.loadWithOverviewMode = true
+        webSettings.useWideViewPort = true
 
         // add progress bar
         web.setWebChromeClient(WebChromeClient())
