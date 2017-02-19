@@ -8,7 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.brandonhogan.kotlintest.R
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
+import com.bumptech.glide.Priority
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+
 
 /**
  * Created by Brandon on 2/1/2017.
@@ -19,11 +22,55 @@ fun ViewGroup.inflate(layoutId: Int, attachToRoot: Boolean = false): View {
     return LayoutInflater.from(context).inflate(layoutId, this, attachToRoot)
 }
 
-fun ImageView.loadImg(imageUrl: String) {
+fun ImageView.loadImg(imageUrl: String, gifUrl: String?) {
     if (TextUtils.isEmpty(imageUrl)) {
-        Picasso.with(context).load(R.mipmap.ic_launcher).into(this)
+        Glide.with(context)
+                .load(R.mipmap.ic_launcher)
+                .asBitmap()
+                .placeholder(R.drawable.progress_anim)
+                .skipMemoryCache(true)
+                .into(this)
     } else {
-        Picasso.with(context).load(imageUrl).into(this)
+
+        Glide.with(context)
+                .load(imageUrl)
+                .asBitmap()
+                .placeholder(R.drawable.progress_anim)
+                .fitCenter()
+                .skipMemoryCache(true)
+                .into(this)
+    }
+}
+
+fun ImageView.preloadGif(gifUrl: String) {
+        Glide.with(context)
+            .load(gifUrl)
+            .preload(500, 500)
+}
+
+fun ImageView.loadGif(imageUrl: String) {
+
+    if (TextUtils.isEmpty(imageUrl)) {
+        Glide.with(context)
+                .load(R.mipmap.ic_launcher)
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                .priority(Priority.IMMEDIATE)
+                .placeholder(R.drawable.progress_anim)
+                .fitCenter()
+                .crossFade()
+                .skipMemoryCache(true)
+                .into(this)
+    } else {
+        Glide.with(context)
+                .load(imageUrl)
+                .asGif()
+                .priority(Priority.IMMEDIATE)
+                .placeholder(R.drawable.progress_anim)
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                .fitCenter()
+                .crossFade()
+                .skipMemoryCache(true)
+                .into(this)
     }
 }
 

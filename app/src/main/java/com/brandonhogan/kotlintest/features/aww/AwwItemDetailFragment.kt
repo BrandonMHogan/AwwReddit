@@ -1,17 +1,19 @@
 package com.brandonhogan.kotlintest.features.aww
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.*
-import android.webkit.WebViewClient
 import com.brandonhogan.kotlintest.MainActivity
 import com.brandonhogan.kotlintest.R
 import com.brandonhogan.kotlintest.commons.BaseFragment
 import com.brandonhogan.kotlintest.commons.RedditAwwItem
 import com.brandonhogan.kotlintest.commons.extensions.inflate
+import com.brandonhogan.kotlintest.commons.extensions.loadGif
+import com.brandonhogan.kotlintest.commons.extensions.loadImg
 import javax.inject.Inject
 import kotlinx.android.synthetic.main.aww_item_detail_fragment.*
-import android.webkit.WebChromeClient
+import com.bumptech.glide.Glide
+import com.bumptech.glide.Priority
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 
 
 /**
@@ -54,23 +56,25 @@ class AwwItemDetailFragment : BaseFragment() {
 
         (activity as MainActivity).setActionBarTitle(redditAwwItem?.title ?: "")
 
-        val webSettings = web.settings
-        webSettings.javaScriptEnabled = true
-        webSettings.setSupportMultipleWindows(true)
-        webSettings.loadWithOverviewMode = true
-        webSettings.useWideViewPort = true
+//        val webSettings = web.settings
+//        webSettings.javaScriptEnabled = true
+//        webSettings.setSupportMultipleWindows(true)
+//        webSettings.loadWithOverviewMode = true
+//        webSettings.useWideViewPort = true
+//
+//        // add progress bar
+//        web.setWebChromeClient(WebChromeClient())
+//        web.setWebViewClient(WebViewClient())
+//        web.setBackgroundColor(Color.TRANSPARENT)
+//
+//        web.loadUrl(redditAwwItem?.url)
 
-        // add progress bar
-        web.setWebChromeClient(WebChromeClient())
-        web.setWebViewClient(WebViewClient())
-        web.setBackgroundColor(Color.TRANSPARENT)
 
-        web.loadUrl(redditAwwItem?.url)
 
-//        if (!redditAwwItem?.gif.isNullOrEmpty())
-//            web.loadUrl(redditAwwItem?.gif)
-//        else
-//            web.loadUrl(redditAwwItem?.image)
+        if (!redditAwwItem?.gif.isNullOrEmpty())
+            imageView.loadGif(redditAwwItem?.gif!!)
+        else
+            imageView.loadImg(redditAwwItem?.image!!, null)
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
