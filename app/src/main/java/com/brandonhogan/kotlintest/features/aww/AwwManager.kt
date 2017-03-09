@@ -35,7 +35,7 @@ class AwwManager @Inject constructor(private val api: AwwAPI) {
                     }
 
                     if (!item.gifs.isEmpty()) {
-                        gif = item.gifs.first().url.replace("&amp;", "&").trim()
+                        gif = item.gifs.last().url.replace("&amp;", "&").trim()
                     }
 
                     RedditAwwItem(item.author, item.title,
