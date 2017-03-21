@@ -56,6 +56,8 @@ class AwwListFragment : BaseFragment() {
         } else {
             requestNews()
         }
+
+        swipe_refresh_layout.setOnRefreshListener { requestNews() }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -74,6 +76,7 @@ class AwwListFragment : BaseFragment() {
                         { retrievedNews ->
                             redditAww = retrievedNews
                             (news_list.adapter as AwwAdapter).addNews(retrievedNews.aNews)
+                            swipe_refresh_layout.isRefreshing = false
                         },
                         { e ->
                             Snackbar.make(news_list, e.message ?: "", Snackbar.LENGTH_INDEFINITE).show()
